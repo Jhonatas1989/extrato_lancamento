@@ -1,5 +1,6 @@
 package br.com.cielo.extrato.lancamento.model.legado;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -7,8 +8,13 @@ import java.util.List;
  *
  */
 @SuppressWarnings("rawtypes")
-public class LancamentoContaCorrente {
+public class LancamentoContaCorrente implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private long numeroRemessaBanco;
 	private String nomeSituacaoRemessa;
 	private DomicilioBancario dadosDomicilioBancario;

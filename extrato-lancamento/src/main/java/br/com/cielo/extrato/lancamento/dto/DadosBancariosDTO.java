@@ -1,31 +1,33 @@
-package br.com.cielo.extrato.lancamento.model;
+package br.com.cielo.extrato.lancamento.dto;
+
+import java.io.Serializable;
 
 /**
  * @author Jhonatas Oliveira
  *
  */
-public class DadosBancarios {
+public class DadosBancariosDTO implements Serializable {
 
-	private String agencia;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private Integer agencia;
 	private String nomeBanco;
 	private String contaCorrente;
 
 	/**
-	 * @param agencia
-	 * @param nomeBanco
-	 * @param contaCorrente
+	 * 
 	 */
-	public DadosBancarios(String agencia, String nomeBanco, String contaCorrente) {
+	public DadosBancariosDTO() {
 		super();
-		this.agencia = agencia;
-		this.nomeBanco = nomeBanco;
-		this.contaCorrente = contaCorrente;
 	}
 
 	/**
 	 * @return the agencia
 	 */
-	public String getAgencia() {
+	public Integer getAgencia() {
 		return agencia;
 	}
 
@@ -33,7 +35,7 @@ public class DadosBancarios {
 	 * @param agencia
 	 *            the agencia to set
 	 */
-	public void setAgencia(String agencia) {
+	public void setAgencia(Integer agencia) {
 		this.agencia = agencia;
 	}
 
@@ -69,7 +71,7 @@ public class DadosBancarios {
 
 	@Override
 	public String toString() {
-		return "DadosBancarios [agencia=" + agencia + ", nomeBanco=" + nomeBanco + ", contaCorrente=" + contaCorrente
+		return "DadosBancariosDTO [agencia=" + agencia + ", nomeBanco=" + nomeBanco + ", contaCorrente=" + contaCorrente
 				+ "]";
 	}
 

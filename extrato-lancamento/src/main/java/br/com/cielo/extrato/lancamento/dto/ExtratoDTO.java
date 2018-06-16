@@ -1,37 +1,32 @@
-package br.com.cielo.extrato.lancamento.model;
+package br.com.cielo.extrato.lancamento.dto;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * @author Jhonatas Oliveira
  *
  */
-public class Extrato {
+public class ExtratoDTO implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private String dataLancamento;
 	private String descricao;
 	private long numero;
 	private String situacao;
 	private String dataConfirmacao;
-	private DadosBancarios dadosBancarios;
-	private String valorFinal;
+	private DadosBancariosDTO dadosBancarios;
+	private BigDecimal valorFinal;
 
 	/**
-	 * @param dataCancelamento
-	 * @param descricao
-	 * @param numero
-	 * @param situacao
-	 * @param dataConfirmacao
-	 * @param dadosBancarios
-	 * @param valorFinal
+	 * 
 	 */
-	public Extrato(String dataLancelamento, String descricao, long numero, String situacao, String dataConfirmacao,
-			DadosBancarios dadosBancarios, String valorFinal) {
+	public ExtratoDTO() {
 		super();
-		this.dataLancamento = dataLancelamento;
-		this.descricao = descricao;
-		this.numero = numero;
-		this.situacao = situacao;
-		this.dataConfirmacao = dataConfirmacao;
-		this.dadosBancarios = dadosBancarios;
-		this.valorFinal = valorFinal;
 	}
 
 	/**
@@ -112,7 +107,7 @@ public class Extrato {
 	/**
 	 * @return the dadosBancarios
 	 */
-	public DadosBancarios getDadosBancarios() {
+	public DadosBancariosDTO getDadosBancarios() {
 		return dadosBancarios;
 	}
 
@@ -120,14 +115,14 @@ public class Extrato {
 	 * @param dadosBancarios
 	 *            the dadosBancarios to set
 	 */
-	public void setDadosBancarios(DadosBancarios dadosBancarios) {
+	public void setDadosBancarios(DadosBancariosDTO dadosBancarios) {
 		this.dadosBancarios = dadosBancarios;
 	}
 
 	/**
 	 * @return the valorFinal
 	 */
-	public String getValorFinal() {
+	public BigDecimal getValorFinal() {
 		return valorFinal;
 	}
 
@@ -135,13 +130,13 @@ public class Extrato {
 	 * @param valorFinal
 	 *            the valorFinal to set
 	 */
-	public void setValorFinal(String valorFinal) {
+	public void setValorFinal(BigDecimal valorFinal) {
 		this.valorFinal = valorFinal;
 	}
 
 	@Override
 	public String toString() {
-		return "Extrato [dataLancelamento=" + dataLancamento + ", descricao=" + descricao + ", numero=" + numero
+		return "ExtratoDTO [dataLancamento=" + dataLancamento + ", descricao=" + descricao + ", numero=" + numero
 				+ ", situacao=" + situacao + ", dataConfirmacao=" + dataConfirmacao + ", dadosBancarios="
 				+ dadosBancarios + ", valorFinal=" + valorFinal + "]";
 	}

@@ -16,7 +16,7 @@ public class ArquivoNaoEncontradoException extends FileNotFoundException {
 	/**
 	 * @param mensagem
 	 */
-	public ArquivoNaoEncontradoException(String mensagem){
+	public ArquivoNaoEncontradoException(String mensagem) {
 		super(mensagem);
 	}
 

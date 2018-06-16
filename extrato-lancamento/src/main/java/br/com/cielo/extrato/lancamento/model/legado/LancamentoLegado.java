@@ -1,12 +1,19 @@
 package br.com.cielo.extrato.lancamento.model.legado;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * @author Jhonatas Oliveira
  *
  */
-public class LancamentoLegado {
+public class LancamentoLegado implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private List<ListaControleLancamento> listaControleLancamento;
 	private TotalControleLancamento totalControleLancamento;
 	private int indice;

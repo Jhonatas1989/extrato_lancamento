@@ -1,10 +1,17 @@
 package br.com.cielo.extrato.lancamento.model.legado;
 
+import java.io.Serializable;
+
 /**
  * @author Jhonatas Oliveira
  *
  */
-public class DomicilioBancario {
+public class DomicilioBancario implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private int codigoBanco;
 	private int numeroAgencia;

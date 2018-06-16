@@ -1,12 +1,18 @@
 package br.com.cielo.extrato.lancamento.model.legado;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
  * @author Jhonatas Oliveira
  *
  */
-public class TotalControleLancamento {
+public class TotalControleLancamento implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private int quantidadeLancamentos;
 	private int quantidadeRemessas;

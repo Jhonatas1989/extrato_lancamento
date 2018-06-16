@@ -17,7 +17,7 @@ import br.com.cielo.extrato.lancamento.model.legado.LancamentoLegado;
  */
 @Repository
 public class ExtratoDAO {
-	
+
 	public static final String CAMINHO_LANCAMENTO_CONTA_LEGADO_JSON = "src\\main\\resources\\lancamento-conta-legado.json";
 
 	/**
@@ -26,15 +26,17 @@ public class ExtratoDAO {
 	 */
 	public LancamentoLegado loadExtratoFromJSONGson() throws ArquivoNaoEncontradoException {
 		Gson gson = new Gson();
-		BufferedReader br;
+		BufferedReader bufferedReader;
 		LancamentoLegado lancamentoLegado = null;
+		
 		try {
-			br = new BufferedReader(new FileReader(CAMINHO_LANCAMENTO_CONTA_LEGADO_JSON));
-			lancamentoLegado = gson.fromJson(br, LancamentoLegado.class);
+			bufferedReader = new BufferedReader(new FileReader(CAMINHO_LANCAMENTO_CONTA_LEGADO_JSON));
+			lancamentoLegado = gson.fromJson(bufferedReader, LancamentoLegado.class);
 		} catch (FileNotFoundException e) {
 			throw new ArquivoNaoEncontradoException("O arquivo json não foi encontrado.");
 		}
+		
 		return lancamentoLegado;
 	}
-	
+
 }

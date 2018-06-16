@@ -10,10 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.cielo.extrato.lancamento.dto.ExtratoDTO;
 import br.com.cielo.extrato.lancamento.exceptions.ArquivoNaoEncontradoException;
-import br.com.cielo.extrato.lancamento.model.Extrato;
 import br.com.cielo.extrato.lancamento.service.ExtratoService;
-
 
 /**
  * @author Jhonatas Oliveira
@@ -25,21 +24,21 @@ public class ExtratoResource {
 
 	@Autowired
 	ExtratoService service;
-	
+
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@CrossOrigin
 	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<Extrato>> listar() {
-		List<Extrato> extratos;
+	public ResponseEntity<List<ExtratoDTO>> listar() {
+		List<ExtratoDTO> extratos;
 		try {
 			extratos = service.getListaExtrato();
 			return ResponseEntity.status(HttpStatus.OK).body(extratos);
 		} catch (ArquivoNaoEncontradoException e) {
 			return new ResponseEntity(HttpStatus.NOT_FOUND);
-		} catch (Exception e){
+		} catch (Exception e) {
 			return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		
+
 	}
-	
+
 }
