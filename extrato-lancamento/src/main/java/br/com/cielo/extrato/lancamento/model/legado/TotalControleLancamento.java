@@ -38,8 +38,7 @@ public class TotalControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param quantidadeLancamentos
-	 *            the quantidadeLancamentos to set
+	 * @param quantidadeLancamentos the quantidadeLancamentos to set
 	 */
 	public void setQuantidadeLancamentos(int quantidadeLancamentos) {
 		this.quantidadeLancamentos = quantidadeLancamentos;
@@ -53,8 +52,7 @@ public class TotalControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param quantidadeRemessas
-	 *            the quantidadeRemessas to set
+	 * @param quantidadeRemessas the quantidadeRemessas to set
 	 */
 	public void setQuantidadeRemessas(int quantidadeRemessas) {
 		this.quantidadeRemessas = quantidadeRemessas;
@@ -68,8 +66,7 @@ public class TotalControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param valorLancamentos
-	 *            the valorLancamentos to set
+	 * @param valorLancamentos the valorLancamentos to set
 	 */
 	public void setValorLancamentos(BigDecimal valorLancamentos) {
 		this.valorLancamentos = valorLancamentos;

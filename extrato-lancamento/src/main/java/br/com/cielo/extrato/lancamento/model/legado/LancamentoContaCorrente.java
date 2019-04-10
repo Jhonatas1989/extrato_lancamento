@@ -8,19 +8,26 @@ import java.util.List;
  *
  */
 @SuppressWarnings("rawtypes")
-public class LancamentoContaCorrente implements Serializable{
+public class LancamentoContaCorrente implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private long numeroRemessaBanco;
 	private String nomeSituacaoRemessa;
 	private DomicilioBancario dadosDomicilioBancario;
 	private String nomeTipoOperacao;
 	private List dadosAnaliticoLancamentoFinanceiroCliente;
 
+	/**
+	 * @param numeroRemessaBanco
+	 * @param nomeSituacaoRemessa
+	 * @param dadosDomicilioBancario
+	 * @param nomeTipoOperacao
+	 * @param dadosAnaliticoLancamentoFinanceiroCliente
+	 */
 	public LancamentoContaCorrente(long numeroRemessaBanco, String nomeSituacaoRemessa,
 			DomicilioBancario dadosDomicilioBancario, String nomeTipoOperacao,
 			List dadosAnaliticoLancamentoFinanceiroCliente) {
@@ -40,8 +47,7 @@ public class LancamentoContaCorrente implements Serializable{
 	}
 
 	/**
-	 * @param numeroRemessaBanco
-	 *            the numeroRemessaBanco to set
+	 * @param numeroRemessaBanco the numeroRemessaBanco to set
 	 */
 	public void setNumeroRemessaBanco(long numeroRemessaBanco) {
 		this.numeroRemessaBanco = numeroRemessaBanco;
@@ -55,8 +61,7 @@ public class LancamentoContaCorrente implements Serializable{
 	}
 
 	/**
-	 * @param nomeSituacaoRemessa
-	 *            the nomeSituacaoRemessa to set
+	 * @param nomeSituacaoRemessa the nomeSituacaoRemessa to set
 	 */
 	public void setNomeSituacaoRemessa(String nomeSituacaoRemessa) {
 		this.nomeSituacaoRemessa = nomeSituacaoRemessa;
@@ -70,8 +75,7 @@ public class LancamentoContaCorrente implements Serializable{
 	}
 
 	/**
-	 * @param dadosDomicilioBancario
-	 *            the dadosDomicilioBancario to set
+	 * @param dadosDomicilioBancario the dadosDomicilioBancario to set
 	 */
 	public void setDadosDomicilioBancario(DomicilioBancario dadosDomicilioBancario) {
 		this.dadosDomicilioBancario = dadosDomicilioBancario;
@@ -85,8 +89,7 @@ public class LancamentoContaCorrente implements Serializable{
 	}
 
 	/**
-	 * @param nomeTipoOperacao
-	 *            the nomeTipoOperacao to set
+	 * @param nomeTipoOperacao the nomeTipoOperacao to set
 	 */
 	public void setNomeTipoOperacao(String nomeTipoOperacao) {
 		this.nomeTipoOperacao = nomeTipoOperacao;
@@ -100,8 +103,9 @@ public class LancamentoContaCorrente implements Serializable{
 	}
 
 	/**
-	 * @param dadosAnaliticoLancamentoFinanceiroCliente
-	 *            the dadosAnaliticoLancamentoFinanceiroCliente to set
+	 * @param dadosAnaliticoLancamentoFinanceiroCliente the
+	 *                                                  dadosAnaliticoLancamentoFinanceiroCliente
+	 *                                                  to set
 	 */
 	public void setDadosAnaliticoLancamentoFinanceiroCliente(List dadosAnaliticoLancamentoFinanceiroCliente) {
 		this.dadosAnaliticoLancamentoFinanceiroCliente = dadosAnaliticoLancamentoFinanceiroCliente;

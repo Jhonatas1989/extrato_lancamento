@@ -72,8 +72,8 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param lancamentoContaCorrenteCliente
-	 *            the lancamentoContaCorrenteCliente to set
+	 * @param lancamentoContaCorrenteCliente the lancamentoContaCorrenteCliente to
+	 *                                       set
 	 */
 	public void setLancamentoContaCorrenteCliente(LancamentoContaCorrente lancamentoContaCorrenteCliente) {
 		this.lancamentoContaCorrenteCliente = lancamentoContaCorrenteCliente;
@@ -87,8 +87,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param dataEfetivaLancamento
-	 *            the dataEfetivaLancamento to set
+	 * @param dataEfetivaLancamento the dataEfetivaLancamento to set
 	 */
 	public void setDataEfetivaLancamento(String dataEfetivaLancamento) {
 		this.dataEfetivaLancamento = dataEfetivaLancamento;
@@ -102,8 +101,9 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param dataLancamentoContaCorrenteCliente
-	 *            the dataLancamentoContaCorrenteCliente to set
+	 * @param dataLancamentoContaCorrenteCliente the
+	 *                                           dataLancamentoContaCorrenteCliente
+	 *                                           to set
 	 */
 	public void setDataLancamentoContaCorrenteCliente(String dataLancamentoContaCorrenteCliente) {
 		this.dataLancamentoContaCorrenteCliente = dataLancamentoContaCorrenteCliente;
@@ -117,8 +117,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param numeroEvento
-	 *            the numeroEvento to set
+	 * @param numeroEvento the numeroEvento to set
 	 */
 	public void setNumeroEvento(long numeroEvento) {
 		this.numeroEvento = numeroEvento;
@@ -132,8 +131,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param descricaoGrupoPagamento
-	 *            the descricaoGrupoPagamento to set
+	 * @param descricaoGrupoPagamento the descricaoGrupoPagamento to set
 	 */
 	public void setDescricaoGrupoPagamento(String descricaoGrupoPagamento) {
 		this.descricaoGrupoPagamento = descricaoGrupoPagamento;
@@ -147,8 +145,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param codigoIdentificadorUnico
-	 *            the codigoIdentificadorUnico to set
+	 * @param codigoIdentificadorUnico the codigoIdentificadorUnico to set
 	 */
 	public void setCodigoIdentificadorUnico(int codigoIdentificadorUnico) {
 		this.codigoIdentificadorUnico = codigoIdentificadorUnico;
@@ -162,8 +159,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param nomeBanco
-	 *            the nomeBanco to set
+	 * @param nomeBanco the nomeBanco to set
 	 */
 	public void setNomeBanco(String nomeBanco) {
 		this.nomeBanco = nomeBanco;
@@ -177,8 +173,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param quantidadeLancamentoRemessa
-	 *            the quantidadeLancamentoRemessa to set
+	 * @param quantidadeLancamentoRemessa the quantidadeLancamentoRemessa to set
 	 */
 	public void setQuantidadeLancamentoRemessa(int quantidadeLancamentoRemessa) {
 		this.quantidadeLancamentoRemessa = quantidadeLancamentoRemessa;
@@ -192,8 +187,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param numeroRaizCNPJ
-	 *            the numeroRaizCNPJ to set
+	 * @param numeroRaizCNPJ the numeroRaizCNPJ to set
 	 */
 	public void setNumeroRaizCNPJ(long numeroRaizCNPJ) {
 		this.numeroRaizCNPJ = numeroRaizCNPJ;
@@ -207,8 +201,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param numeroSufixoCNPJ
-	 *            the numeroSufixoCNPJ to set
+	 * @param numeroSufixoCNPJ the numeroSufixoCNPJ to set
 	 */
 	public void setNumeroSufixoCNPJ(String numeroSufixoCNPJ) {
 		this.numeroSufixoCNPJ = numeroSufixoCNPJ;
@@ -222,8 +215,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param valorLancamentoRemessa
-	 *            the valorLancamentoRemessa to set
+	 * @param valorLancamentoRemessa the valorLancamentoRemessa to set
 	 */
 	public void setValorLancamentoRemessa(BigDecimal valorLancamentoRemessa) {
 		this.valorLancamentoRemessa = valorLancamentoRemessa;
@@ -237,8 +229,9 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param dateLancamentoContaCorrenteCliente
-	 *            the dateLancamentoContaCorrenteCliente to set
+	 * @param dateLancamentoContaCorrenteCliente the
+	 *                                           dateLancamentoContaCorrenteCliente
+	 *                                           to set
 	 */
 	public void setDateLancamentoContaCorrenteCliente(long dateLancamentoContaCorrenteCliente) {
 		this.dateLancamentoContaCorrenteCliente = dateLancamentoContaCorrenteCliente;
@@ -252,8 +245,7 @@ public class ListaControleLancamento implements Serializable {
 	}
 
 	/**
-	 * @param dateEfetivaLancamento
-	 *            the dateEfetivaLancamento to set
+	 * @param dateEfetivaLancamento the dateEfetivaLancamento to set
 	 */
 	public void setDateEfetivaLancamento(long dateEfetivaLancamento) {
 		this.dateEfetivaLancamento = dateEfetivaLancamento;

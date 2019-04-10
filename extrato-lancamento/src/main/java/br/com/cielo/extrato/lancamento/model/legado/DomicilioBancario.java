@@ -37,8 +37,7 @@ public class DomicilioBancario implements Serializable {
 	}
 
 	/**
-	 * @param codigoBanco
-	 *            the codigoBanco to set
+	 * @param codigoBanco the codigoBanco to set
 	 */
 	public void setCodigoBanco(int codigoBanco) {
 		this.codigoBanco = codigoBanco;
@@ -52,8 +51,7 @@ public class DomicilioBancario implements Serializable {
 	}
 
 	/**
-	 * @param numeroAgencia
-	 *            the numeroAgencia to set
+	 * @param numeroAgencia the numeroAgencia to set
 	 */
 	public void setNumeroAgencia(int numeroAgencia) {
 		this.numeroAgencia = numeroAgencia;
@@ -67,8 +65,7 @@ public class DomicilioBancario implements Serializable {
 	}
 
 	/**
-	 * @param numeroContaCorrente
-	 *            the numeroContaCorrente to set
+	 * @param numeroContaCorrente the numeroContaCorrente to set
 	 */
 	public void setNumeroContaCorrente(String numeroContaCorrente) {
 		this.numeroContaCorrente = numeroContaCorrente;

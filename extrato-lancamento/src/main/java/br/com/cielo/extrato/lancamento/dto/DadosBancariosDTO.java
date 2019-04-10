@@ -25,6 +25,18 @@ public class DadosBancariosDTO implements Serializable {
 	}
 
 	/**
+	 * @param agencia
+	 * @param nomeBanco
+	 * @param contaCorrente
+	 */
+	public DadosBancariosDTO(Integer agencia, String nomeBanco, String contaCorrente) {
+		super();
+		this.agencia = agencia;
+		this.nomeBanco = nomeBanco;
+		this.contaCorrente = contaCorrente;
+	}
+
+	/**
 	 * @return the agencia
 	 */
 	public Integer getAgencia() {
@@ -32,8 +44,7 @@ public class DadosBancariosDTO implements Serializable {
 	}
 
 	/**
-	 * @param agencia
-	 *            the agencia to set
+	 * @param agencia the agencia to set
 	 */
 	public void setAgencia(Integer agencia) {
 		this.agencia = agencia;
@@ -47,8 +58,7 @@ public class DadosBancariosDTO implements Serializable {
 	}
 
 	/**
-	 * @param nomeBanco
-	 *            the nomeBanco to set
+	 * @param nomeBanco the nomeBanco to set
 	 */
 	public void setNomeBanco(String nomeBanco) {
 		this.nomeBanco = nomeBanco;
@@ -62,8 +72,7 @@ public class DadosBancariosDTO implements Serializable {
 	}
 
 	/**
-	 * @param contaCorrente
-	 *            the contaCorrente to set
+	 * @param contaCorrente the contaCorrente to set
 	 */
 	public void setContaCorrente(String contaCorrente) {
 		this.contaCorrente = contaCorrente;

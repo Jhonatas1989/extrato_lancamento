@@ -13,7 +13,7 @@ public class ExtratoDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private String dataLancamento;
 	private String descricao;
 	private long numero;
@@ -30,6 +30,27 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
+	 * @param dataLancamento
+	 * @param descricao
+	 * @param numero
+	 * @param situacao
+	 * @param dataConfirmacao
+	 * @param dadosBancarios
+	 * @param valorFinal
+	 */
+	public ExtratoDTO(String dataLancamento, String descricao, long numero, String situacao, String dataConfirmacao,
+			DadosBancariosDTO dadosBancarios, BigDecimal valorFinal) {
+		super();
+		this.dataLancamento = dataLancamento;
+		this.descricao = descricao;
+		this.numero = numero;
+		this.situacao = situacao;
+		this.dataConfirmacao = dataConfirmacao;
+		this.dadosBancarios = dadosBancarios;
+		this.valorFinal = valorFinal;
+	}
+
+	/**
 	 * @return the dataLancamento
 	 */
 	public String getDataLancamento() {
@@ -37,8 +58,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param dataLancamento
-	 *            the dataLancamento to set
+	 * @param dataLancamento the dataLancamento to set
 	 */
 	public void setDataLancamento(String dataLancamento) {
 		this.dataLancamento = dataLancamento;
@@ -52,8 +72,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param descricao
-	 *            the descricao to set
+	 * @param descricao the descricao to set
 	 */
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
@@ -67,8 +86,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param numero
-	 *            the numero to set
+	 * @param numero the numero to set
 	 */
 	public void setNumero(long numero) {
 		this.numero = numero;
@@ -82,8 +100,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param situacao
-	 *            the situacao to set
+	 * @param situacao the situacao to set
 	 */
 	public void setSituacao(String situacao) {
 		this.situacao = situacao;
@@ -97,8 +114,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param dataConfirmacao
-	 *            the dataConfirmacao to set
+	 * @param dataConfirmacao the dataConfirmacao to set
 	 */
 	public void setDataConfirmacao(String dataConfirmacao) {
 		this.dataConfirmacao = dataConfirmacao;
@@ -112,8 +128,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param dadosBancarios
-	 *            the dadosBancarios to set
+	 * @param dadosBancarios the dadosBancarios to set
 	 */
 	public void setDadosBancarios(DadosBancariosDTO dadosBancarios) {
 		this.dadosBancarios = dadosBancarios;
@@ -127,8 +142,7 @@ public class ExtratoDTO implements Serializable {
 	}
 
 	/**
-	 * @param valorFinal
-	 *            the valorFinal to set
+	 * @param valorFinal the valorFinal to set
 	 */
 	public void setValorFinal(BigDecimal valorFinal) {
 		this.valorFinal = valorFinal;

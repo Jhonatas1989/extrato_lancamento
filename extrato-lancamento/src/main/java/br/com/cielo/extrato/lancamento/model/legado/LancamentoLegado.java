@@ -45,8 +45,7 @@ public class LancamentoLegado implements Serializable {
 	}
 
 	/**
-	 * @param listaControleLancamento
-	 *            the listaControleLancamento to set
+	 * @param listaControleLancamento the listaControleLancamento to set
 	 */
 	public void setListaControleLancamento(List<ListaControleLancamento> listaControleLancamento) {
 		this.listaControleLancamento = listaControleLancamento;
@@ -60,8 +59,7 @@ public class LancamentoLegado implements Serializable {
 	}
 
 	/**
-	 * @param totalControleLancamento
-	 *            the totalControleLancamento to set
+	 * @param totalControleLancamento the totalControleLancamento to set
 	 */
 	public void setTotalControleLancamento(TotalControleLancamento totalControleLancamento) {
 		this.totalControleLancamento = totalControleLancamento;
@@ -75,8 +73,7 @@ public class LancamentoLegado implements Serializable {
 	}
 
 	/**
-	 * @param indice
-	 *            the indice to set
+	 * @param indice the indice to set
 	 */
 	public void setIndice(int indice) {
 		this.indice = indice;
@@ -90,8 +87,7 @@ public class LancamentoLegado implements Serializable {
 	}
 
 	/**
-	 * @param tamanhoPagina
-	 *            the tamanhoPagina to set
+	 * @param tamanhoPagina the tamanhoPagina to set
 	 */
 	public void setTamanhoPagina(int tamanhoPagina) {
 		this.tamanhoPagina = tamanhoPagina;
@@ -105,8 +101,7 @@ public class LancamentoLegado implements Serializable {
 	}
 
 	/**
-	 * @param totalElements
-	 *            the totalElements to set
+	 * @param totalElements the totalElements to set
 	 */
 	public void setTotalElements(int totalElements) {
 		this.totalElements = totalElements;
